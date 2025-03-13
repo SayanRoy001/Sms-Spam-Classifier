@@ -47,10 +47,5 @@ if st.button("Check Spam"):
         st.warning("Please enter some text to analyze.")
 
 st.sidebar.header("About")
-st.sidebar.write("This app uses a machine learning model to predict whether an SMS message is spam or not.")
+st.sidebar.write("This app uses a Bidirectional LSTM-based machine learning model to predict whether an SMS message is spam or not. The model is trained on a balanced dataset with advanced preprocessing and synthetic data augmentation techniques, achieving high accuracy and reliability in spam detection.")
 
-st.sidebar.header("Team Neural Nexus")
-members = ['Arkapravo Das', 'Subhranil Nandy', 'Harsh Raj Gupta', 'Sayan Roy', 'Aritro Shome']
-roles = ['Developer'] * len(members)
-for member, role in zip(members, roles):
-    st.sidebar.write(f"{member} - {role}")
